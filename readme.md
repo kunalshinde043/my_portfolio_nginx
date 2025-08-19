@@ -58,7 +58,7 @@ sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-![alt text](Screenshots/Error.png)
+
 ---
 
 ### 3. Deploying Portfolio Files
@@ -84,7 +84,7 @@ curl localhost
 #### Important: Testing without inbound rules
 
 If you directly try to open your public IP in the browser **without configuring inbound rules for HTTP (port 80)**, you will see an error (refer screenshot).
-![alt text](image-2.png)
+![alt text](Screenshots/Error.png)
 
 Although Nginx is running on your server, the HTTP requests are being blocked because the security group has not allowed incoming traffic on port 80.
 
