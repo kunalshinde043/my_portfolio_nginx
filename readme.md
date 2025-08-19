@@ -58,7 +58,7 @@ sudo yum install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
-
+![alt text](Screenshots/Error.png)
 ---
 
 ### 3. Deploying Portfolio Files
@@ -92,14 +92,14 @@ To fix this:
 
 1. Go to **EC2 Instances tab** in AWS Console, select the checkbox for your respective instance.
 2. Under the **Security tab**, look for the attached **launch-wizard** security group. (refer screenshot)
-![alt text](image-1.png)
+![alt text](Screenshots/1.Launch.png)
 3. Select the **security group checkbox**, scroll down, and click **Edit inbound rules**. (refer screenshot)
-![alt text](image-3.png)
+![alt text](Screenshots/2.Edit.png)
 4. Add a new rule:
 
    * **Type**: HTTP
    * **Source**: Anywhere-IPv4 (0.0.0.0/0)(refer screenshot)
-   ![alt text](image-4.png)  
+   ![alt text](Screenshots/3.Add%20Rules.png)  
 5. Save the rules.
 
 Now try to access your portfolio again with your public IP:
@@ -107,7 +107,7 @@ Now try to access your portfolio again with your public IP:
 ```
 http://<your-ec2-public-ip>
 ```
-![alt text](image-5.png)
+![alt text](Screenshots/4.Portfolio.png)
 
 It should load successfully.
 
