@@ -84,7 +84,7 @@ curl localhost
 #### Important: Testing without inbound rules
 
 If you directly try to open your public IP in the browser **without configuring inbound rules for HTTP (port 80)**, you will see an error (refer screenshot).
-![alt text](Screenshots/Error.png)
+![alt text](Screenshots/Site%20Error.png)
 
 Although Nginx is running on your server, the HTTP requests are being blocked because the security group has not allowed incoming traffic on port 80.
 
